@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Reem Kufi", sans-serif !important;
+}
+img {
+  width: 300px;
+  height: 300px;
+  transition: all 0.3s ease;
+}
+
+.bookimg {
+  width: 20%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+.App {
+  min-height: 100vh;
+  width: 85vw;
+  max-width: 1900px;
+  margin: 0rem auto;
+}
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90px;
+}
+.navbar-menu-container {
+  display: none;
+}
+.navbar-links-container a {
+  margin-right: 3rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.primary-button {
+  padding: 0.9rem 1.75rem;
+  background-color: white;
+  color: black;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.primary-button:hover {
+  background-color: rgb(234, 234, 234);
+}
+.navbar-menu-container svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+.container {
+  align-items: center;
+  padding: "10px";
+  margin-left: 30px;
+  display: inline-block;
+  width: 60px;
+  margin-bottom: 15px;
+
+}
+.containerDeleteButton {
+  display: flex;
+}
+
+
+@media (max-width: 1000px) {
+  .navbar-links-container a {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  .primary-button {
+    font-size: 1rem;
+  }
+
+}
+@media (max-width: 800px) {
+  .nav-logo-container {
+    max-width: 140px;
+  }
+  .navbar-links-container {
+    display: none;
+  }
+  .navbar-menu-container {
+    display: flex;
+  }
+
+  .App {
+    max-width: 95vw;
+  }
+}
+  
+.card-grid  {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 120px;
+    padding-top: 50px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    
+  }
+
+  .card-image{
+    max-width: 180vh;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .card-image img{
+    height: 200px;
+    width: 200px;
+    transition: all 0.2s ease;
+
+  }
+
+  .card-image :hover{
+    transform: scale(1.1);
+  }
+
+  
+  .card-content {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0x 10px;
+    padding: 1em;
+    object-fit: cover;
+    font-size: 10px;
+  }
+
+
+.book-details{
+  min-height: 8vh;
+  float: left;
+  width:55%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 0%;
+  text-align: center;  
+}
+
+.book-content{
+  display: flex;
+  padding-left: 5px;
+}
+
+
+.second-btn{
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.9rem 1.75rem;
+  background-color: purple;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+
+.third-btn{
+  padding: 0.9rem 1.75rem;
+  background-color: blue;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.fourth-btn{
+  padding: 0.9rem 1.75rem;
+  background-color: green;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+h1 {
+  color: black;
+}
+
+h3 {
+  color: black;
+}
+
+div {
+  color: black;
+}
+
+.BooksButton {
+  padding: 0.9rem 1.75rem;
+  color: black;
+  background-color: green;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.DeleteButton {
+  margin-left: auto;
+  margin-right: 0px;
+  margin-top: 10px;
+  padding: 0.9rem 1.75rem;
+  color: white;
+  background-color: red;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+
+}
+
+.BasicButton {
+  padding: 0.9rem 1.75rem;
+  color: white;
+  background-color: #1565c0;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.myBooksTable {
+  border-collapse: collapse;
+  width: 100%;
+} 
+
+.myBooksTable th {
+  background-color: #f2f2f2;
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}  
+
+.myBooksTable .myBooksTable td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}  
+
+.myBooksTable .myBooksTable tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.myBooksTable .myBooksTable tbody {
+  border: 1px solid #dddddd;
+}
+
+.myBooksTable {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+.form { 
+  display: inline-block; 
+  text-align: left; 
+}
+
+
+.myWishlistTableTr {
+  align-items: center;
+  text-align: center;
+}
+
+.myWishlistTableTd {
+  font-size: 1.2em;
+  align-items: center;
+  text-align: center;
+}
+
+.sentMessages {
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  padding: 5px;
+  text-align: left;
+  margin-left: 45%;
+  margin-right: 5px;
+  margin-top: 5px;
+  max-width:max-content;
+}
+
+.sentInfo {
+  font-size: 0.7em;
+  text-align: right;
+  margin-right: 15px;
+}
+
+.recievedMessages {
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: mediumseagreen;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 45%;
+  margin-top: 5px;
+  max-width:max-content;
+}
+
+.recievedInfo {
+  font-size: 0.7em;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.messageInput {
+  vertical-align: bottom;
+  align-self: baseline;
+  min-width: 85%;
+}
+
+#message-field {
+  min-width: 70%;
+  width: 530px;
+  
+}
+
+#send-button {
+  align-self: center;
+  margin-left: 2px;
+  margin-top: 10px;
+}
+
+.messageStyle {
+  display: 'flex';
+  min-width: 85%;
+}
+
+.bookCoverSmall {
+  align-items: right;
+  height: auto;
+  width: 30px;
+  background-color: mediumseagreen;
+}
+
+
+
+
+.containerBookReturnedButton {
+  display: flex;
+}
+
+.bookReturnedtButton {
+  margin-left: auto;
+  margin-right: 0px;
+  margin-top: 10px;
+  padding: 0.9rem 1.75rem;
+  color: white;
+  background-color: green;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.backButton {
+  margin-left: 10px;
+  margin-top: 10px;
+  color: white;
+  background-color: #1565c0;
+}
+
+.selected {
+  background-color: lightgray;
+}
+
+.trackerDate {
+  display: flexbox;
+  text-align: center;
+}
+
+.statusBookCard {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.trackerContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.progress-bar {
+  position: relative;
+  width:70%;
+  height: 3em;
+  background-color: grey;
+  border-radius: 1.5em;
+  color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.progress-bar::before {
+  position: absolute;
+  content: attr(data-label);
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  left: .5em;
+  top: .5em;
+  bottom: .5em;
+  width: calc(var(--width, 14) * 7.14%);
+  min-width: 2rem;
+  max-width: calc(100% - 1em);
+  background-color: #1565c0;
+  border-radius: 1em;
+  padding: 1em;
+  
+}
+
+.dueDate {
+  border: 1px solid hsl(0, 0%, 80%);
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 5px, 5px, 5px;
+
+}
+
+.borderContainer {
+  border: 1px solid hsl(0, 0%, 80%);
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 5px, 5px, 5px;
+}
+
+.displayContainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
